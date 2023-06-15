@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@font-face {
+    font-family: 'helvneue';
+    src: url('./fonts/helveticaneue_light-webfont.woff2') format('woff2'),
+         url('./fonts/helveticaneue_light-webfont.woff') format('woff'),
+         url('./fonts/helveticaneue_light-webfont.ttf') format('truetype'),
+         url('./fonts/helveticaneue_light-webfont.svg#helveticaneuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: content-box;
@@ -9,14 +17,15 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'helvneue', Arial, Helvetica, sans-serif;
+    letter-spacing: 2pt;
     margin: 0px;
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     background: url(../img/back.png) center repeat;
 }
-h1,h2, h3, h4, h5{margin: 0px 0px;}
+h1,h2, h3, h4, h5, p{margin: 0px 0px;}
 
 #wrapper{
     width:70%;
@@ -52,14 +61,19 @@ header{
 .card-name .card-left-box h1{
     align-self: center;
     padding: 0px 20px;
+    text-align: center;
+    width: 100%;
 }
 .card-name .card-rigth-box{
     flex: auto;
 }
 .card-rigth-box .card-rigth-top{
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
     border-bottom: 3px solid dimgray;
+}
+.card-rigth-box .card-rigth-top h1{
+    font-size: 1.7rem;
 }
 .card-rigth-box .card-rigth-bottom{
     display: flex;
@@ -90,26 +104,130 @@ main{
 .profile-image{
     flex: auto;
 }
+.profile-image .image{
+    width: 260px;
+    text-align: center;
+    padding: 25px 0px;
+}
 .profile-image img{
     width: 190px;
     border-radius: 50%;
+    box-shadow: 5px -3px 10px #000000;
 }
 .profile-text{
     flex: auto;
-    padding: 0px 0px 0px 50px;
+    padding: 25px 0px 25px 50px;
+}
+.profile-text p{
+    margin: 0px 0px;
+    font-size: 15pt;
+    font-style: italic;
+    word-spacing: 0%;
 }
 .cv{
     display: flex;
 }
 .cv svg{
-    width: 30px;
+    width: 20px;
 }
-.left{}
-.left .contact{}
-.left .contact h1{
-    
+.cv section h1{
+    padding: 15px 0px;
+    border-bottom: 3px solid dimgray;
+    border-top: 3px solid dimgray;
+    margin: 0px 25px;
+    padding-left: 25px;
 }
-.left .skills{}
-.rigth{}
-.right .education{}
-.rigth .experience{}
+.left{width: 350px;}
+.left .contact .contact-content{
+    padding: 10px 0px;
+    margin: 0px 25px;
+}
+.left .contact .contact-content ul{
+    padding: 0px 0px;
+}
+.left .contact .contact-content ul li{
+    display:block;
+    width: 100%;
+    overflow: hidden;
+    margin: 8px 0px;
+}
+.left .contact .contact-content ul li span{
+    float: left;
+    height: 20px;
+}
+.left .contact .contact-content ul li span.text-span{
+    margin: 2px 0px 0px 5px;
+}
+.left .skills ul{
+    padding: 20px 0px;
+    margin: 0px 25px;
+}
+.left .skills ul li{
+    display: block;
+    border-bottom: 1px solid dimgray;
+    padding: 10px 0px 5px 0px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.left .skills ul li:last-of-type{
+    border-bottom: none;
+}
+.left .skills ul li span{
+    width: 150px;
+
+}
+.left .skills ul li span.expertise{
+    width: 50px;
+    margin: 0px 0px 0px 10px
+}
+.right .education .edu-content,
+.right .experience .exp-content{
+    padding: 10px 0px;
+    margin: 0px 25px;
+}
+.right .education .edu-content .event{
+    display: flex;
+    flex-direction: row;
+}
+.right .education .edu-content .event ul,
+.right .experience .exp-content .event ul{padding: 0px 10px 0px 20px;}
+.right .education .edu-content .event ul li,
+.right .experience .exp-content .event ul li{
+    display: block;
+}
+.event .year{
+    border-right: 2px solid dimgray;
+    padding-bottom: 10px;
+}
+.event .year ul{
+    direction: rtl;
+    margin-right: -1px;
+}
+.event .year ul li{
+    display: list-item !important;
+    list-style: disc;
+    margin-bottom: 10px;
+}
+.event .inst{padding-bottom: 10px;}
+.event .inst ul{
+    margin-top: 10px;
+}
+.event .inst li{
+    margin: 0px 0px 10px;
+}
+.event .inst .h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.event .inst .h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.right .experience .exp-content .event{
+    display: flex;
+    flex-direction: row;
+}
