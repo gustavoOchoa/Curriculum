@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'helvneue';
+    src: url('./fonts/helveticaneue_light-webfont.woff2') format('woff2'),
+         url('./fonts/helveticaneue_light-webfont.woff') format('woff'),
+         url('./fonts/helveticaneue_light-webfont.ttf') format('truetype'),
+         url('./fonts/helveticaneue_light-webfont.svg#helveticaneuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'helvneue', Arial, Helvetica, sans-serif;
+    letter-spacing: 2pt;
+    margin: 0px;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+h1,h2, h3, h4, h5, p{margin: 0px 0px;}
+
+#home{
+    background: url(../img/back.png) center repeat;
+}
