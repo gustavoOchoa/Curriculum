@@ -25,7 +25,74 @@ body {
     overflow-y: auto;
 }
 h1,h2, h3, h4, h5, p{margin: 0px 0px;}
-
-#home{
+#back_section{
     background: url(../img/back.png) center repeat;
+}
+#home{
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 90%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 90%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+#home .intro{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.intro h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#social-icons{
+    width: 10%;
+    margin: 0px auto;
+}
+#social-icons ul{
+    padding: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#social-icons ul li{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px 0px 0px;
+}
+#social-icons ul li a{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+#social-icons ul li a i::before{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    margin: 2px 0px 0px 2px;
+}
+#social-icons ul li a i::after{
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    border: 2px solid #000;
+    transform: rotate(45deg);
+}
+#social-icons ul li a i.linkedin::before{
+    background-image: url(../img/linkedin.svg);
+}
+#social-icons ul li a i.github::before{
+    background-image: url(../img/github.svg);
 }
