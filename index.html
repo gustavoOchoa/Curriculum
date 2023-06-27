@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/animate.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
     <div id="wrapper">
@@ -26,7 +27,7 @@
                     <i class="linkedin" title="LinkedIn profile"></i>
                   </a> 
                 </li> 
-                <li class="animate__animated animate__rollIn animate__delay-1s">
+                <li class="animate__animated animate__rollIn animate__delay-2s">
                   <a target="_blank" href="#">
                     <i class="github" title="Github account"></i>
                   </a> 
@@ -36,28 +37,39 @@
           </div>
         </section>  
       </div>
-      <section id="menu">
-        <ul class="nav">
-          <li><a href="">Who am i?</a></li>
-          <li><a href="">Education</a></li>
-          <li><a href="">Experiencia</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Contact</a></li>
+      <section id="menu" class="container">
+        <ul class="row">
+          <li class="col-3"><a class="nav-link" href="">Who am i?</a></li>
+          <li class="col-3"><a class="nav-link" href="">Resume</a></li>
+          <li class="col-3"><a class="nav-link" href="">Skills</a></li>
+          <li class="col-3"><a class="nav-link" href="">Contact</a></li>
         </ul>
       </section>
       <section class="bio">
-        <div class="profile">
-          <div class="profile-pic">
-            <img src="./assets/img/photo.jpg" alt="Gutavo Ochoa">
+        <div class="container">
+          <div class="card mb-3">
+            <div class="row g-0 profile">
+              <div class="col-md-4 profile-pic">
+                <img src="./assets/img/photo.jpg" alt="Gutavo Ochoa" class="img-fluid rounded-start">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Bio</h5>
+                  <div class="profile-info">
+                    <p><span>Birth:</span>Córdoba, Córdoba, Argentina</p>
+                    <p><span>Location:</span>Posadas, Misions, Argentina</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="profile-info">
-            <p><span>Birth:</span>Córdoba, Córdoba, Argentina</p>
-            <p><span>Location:</span>Posadas, Misions, Argentina</p>
+          <div class="row selfie">
+            <div class="col">
+              <h3>Who am i?</h3>
+              <p>I am a passionate professional with a keen interest in new technologies. I embarked on my career back in 2008 as a Junior Developer, primarily focusing on web page development. It was during this time that I discovered my love for stylesheets and started working with PHP, JavaScript, and jQuery. Since then, I have continued to expand my knowledge in various technologies and have had the privilege of collaborating with diverse development teams, which has been immensely fulfilling.</p>
+              <p>I am an extremely proactive individual who thrives in multidisciplinary team environments, aiming to deliver exceptional results. I am excited about taking on new challenges and continuously learning to foster professional growth.</p>
+            </div>
           </div>
-        </div>
-        <div class="selfie">
-          <p>I am a passionate professional with a keen interest in new technologies. I embarked on my career back in 2008 as a Junior Developer, primarily focusing on web page development. It was during this time that I discovered my love for stylesheets and started working with PHP, JavaScript, and jQuery. Since then, I have continued to expand my knowledge in various technologies and have had the privilege of collaborating with diverse development teams, which has been immensely fulfilling.</p>
-          <p>I am an extremely proactive individual who thrives in multidisciplinary team environments, aiming to deliver exceptional results. I am excited about taking on new challenges and continuously learning to foster professional growth.</p>
         </div>
       </section>
       <section class="education">
@@ -73,6 +85,7 @@
 
       </section>
     </div>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="./assets/js/index.js" type="text/javascript"></script>
   </body>
 </html>
