@@ -140,20 +140,24 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
 }
 .selfie h3{text-align: center; margin: 25px 0px 15px;}
 
-.education .row h1{text-align: center; margin: 15px 0px 20px;}
-.education .container-block{margin: 20px 0px;}
-.education .container-block::before{
+.education .row h1, .resume .row h1,
+.skills .row h1{text-align: center; margin: 15px 0px 20px;}
+.education .container-block, 
+.resume .container-block{margin: 20px 0px;}
+.education .container-block::before,
+.resume .container-block::before{
     content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g id="chevron-circle-down"><path fill="lightgray" d="M12,21a9,9,0,1,1,9-9A9,9,0,0,1,12,21ZM12,4.5A7.5,7.5,0,1,0,19.5,12,7.5,7.5,0,0,0,12,4.5Z"/><path fill="lightgray" d="M12,14.75a.74.74,0,0,1-.53-.22l-4-4A.75.75,0,0,1,8.53,9.47L12,12.94l3.47-3.47a.75.75,0,0,1,1.06,1.06l-4,4A.74.74,0,0,1,12,14.75Z"/></g></svg>');
     color: var(--borders);
     width: 20px;
     float: left;
     margin-left: -10px;
 }
-.education .block{
+.education .block, .resume .block{
     position: relative;
     padding-top: 20px;
 }
-.education .block::before{
+.education .block::before, 
+.resume .block::before{
     content: "";
     position: absolute;
     top: 8px;
@@ -162,11 +166,32 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     margin-left: -11px;
     background-color: var(--borders);
 }
-.education .card{
+.education .card, .resume .card{
     margin-top: 10px;
 }
-.education .year{
+.education .year, .resume .year{
     position: absolute;
     top: 0px;
     left: 20px;
+    font-weight: bold;
 }
+
+/** skills **/
+.skills .skill-item{margin: 5px 0px;}
+.skills .skill-name{font-size: 0.8rem;}
+.skills .skill-name p{margin: 0px;}
+.skills .skill-bar{
+    position: relative; 
+    border: 1px solid #000; 
+    text-align: end; 
+    padding: 0px 0px;
+}
+.skills .skill-bar::before{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.skills .skill-bar .bar{font-size: .8rem;}
