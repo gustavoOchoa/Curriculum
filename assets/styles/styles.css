@@ -1,6 +1,8 @@
 :root{
     --font-color: #212529;
     --borders: rgba(0,0,0,.125);
+    --back-card: #1E2227;
+    --color-card: rgb(220, 220, 220);
 }
 
 @font-face {
@@ -30,6 +32,8 @@ body {
     overflow-y: auto;
 }
 h1,h2, h3, h4, h5, p{margin: 0px 0px;}
+.noShow{visibility: hidden !important;}
+.show{visibility: visible !important;}
 #back_section{
     background: url(../img/back.png) center repeat;
 }
@@ -139,7 +143,6 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     width: 90px;
 }
 .selfie h3{text-align: center; margin: 25px 0px 15px;}
-
 .education .row h1, .resume .row h1,
 .skills .row h1{text-align: center; margin: 15px 0px 20px;}
 .education .container-block, 
@@ -168,7 +171,15 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
 }
 .education .card, .resume .card{
     margin-top: 10px;
+    background-color: transparent;
+    transition: all ease-in-out .35s;
 }
+.education .card:hover, .resume .card:hover{
+    background-color: var(--back-card);
+    color: var(--color-card);
+    transition: all ease-in-out .35s;
+}
+
 .education .year, .resume .year{
     position: absolute;
     top: 0px;
@@ -186,12 +197,20 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     text-align: end; 
     padding: 0px 0px;
 }
-.skills .skill-bar::before{
+.skills .skill-bar .colored{
     content: "";
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
 }
 .skills .skill-bar .bar{font-size: .8rem;}
+.skills .skill-bar .colored.i30 {width: 30%;}
+.skills .skill-bar .colored.i50 {width: 50%;}
+.skills .skill-bar .colored.i60 {width: 60%;}
+.skills .skill-bar .colored.i70 {width: 70%;}
+.skills .skill-bar .colored.i75 {width: 75%;}
+.skills .skill-bar .colored.i80 {width: 80%;}
+.skills .skill-bar .colored.i90 {width: 90%;}
+.skills .skill-bar .colored.i100 {width: 100%;}
