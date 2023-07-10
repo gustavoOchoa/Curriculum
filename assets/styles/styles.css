@@ -192,6 +192,17 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     left: 20px;
     font-weight: bold;
 }
+
+.education .year p,
+.resume .year p{
+    padding: 10px
+}
+
+.education .year p.text-end,
+.resume .year p.text-end{
+    padding: 0px
+}
+
 /** skills **/
 #skills{
     padding: 40px 0px;
@@ -293,5 +304,9 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     .education .year, .resume .year{
         position: relative;
         width: 50%;
+    }
+    .education .year .text-end,
+    .resume .year .text-end{
+        padding: 0px 40px !important;
     }
 }
