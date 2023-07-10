@@ -64,7 +64,7 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     margin-bottom: 30px;
 }
 #social-icons{
-    width: 10%;
+    width: 150px;
     margin: 0px auto;
 }
 #social-icons ul{
@@ -89,7 +89,7 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     width: 38px;
     height: 38px;
     z-index: 1;
-    margin: 2px 0px 0px 2px;
+    margin: 0px;
 }
 #social-icons ul li a i::after{
     position: absolute;
@@ -117,10 +117,11 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     justify-content: center;
 }
 #menu ul li a{
+    font-size: clamp(1rem, 2vw, 1.3rem);
     text-decoration: none;
     color: var(--font-color);
-    display: flex;
-    align-items: center;
+    width: 100%;
+    text-align: center;
     transition: all ease-in-out .35s;
 }
 #menu ul li a:hover{
@@ -134,14 +135,19 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     display: flex;
     padding: 15px;
     align-items: center;
+    transition: all ease-in-out .35s;
 }
-.profile .profile-pic img{border-radius: 50% !important;}
+.profile .profile-pic img{border-radius: 50% !important; transition: all ease-in-out .35s;}
 .profile .card-body{border: 2px solid var(--borders)}
-.profile .card-body .card-title{text-align: center;}
-.profile .card-body .profile-info p span{
-    float: left;
-    width: 90px;
+.profile .card-body h2.card-title{
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 1.7rem);
+    font-weight: bold;
 }
+.profile .card-body .profile-info p{
+    font-size: clamp(0.85rem, 2vw, 1.3rem);
+}
+
 .selfie h3{text-align: center; margin: 25px 0px 15px;}
 .education .row h1, .resume .row h1,
 .skills .row h1{text-align: center; margin: 15px 0px 20px;}
@@ -170,6 +176,7 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     background-color: var(--borders);
 }
 .education .card, .resume .card{
+    cursor: pointer;
     margin-top: 10px;
     background-color: transparent;
     transition: all ease-in-out .35s;
@@ -179,15 +186,16 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
     color: var(--color-card);
     transition: all ease-in-out .35s;
 }
-
 .education .year, .resume .year{
     position: absolute;
     top: 0px;
     left: 20px;
     font-weight: bold;
 }
-
 /** skills **/
+#skills{
+    padding: 40px 0px;
+}
 .skills .skill-item{margin: 5px 0px;}
 .skills .skill-name{font-size: 0.8rem;}
 .skills .skill-name p{margin: 0px;}
@@ -199,18 +207,91 @@ h1,h2, h3, h4, h5, p{margin: 0px 0px;}
 }
 .skills .skill-bar .colored{
     content: "";
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
+    width: 0px;
+    transition: all ease-in-out 2s;
 }
 .skills .skill-bar .bar{font-size: .8rem;}
-.skills .skill-bar .colored.i30 {width: 30%;}
-.skills .skill-bar .colored.i50 {width: 50%;}
-.skills .skill-bar .colored.i60 {width: 60%;}
-.skills .skill-bar .colored.i70 {width: 70%;}
-.skills .skill-bar .colored.i75 {width: 75%;}
-.skills .skill-bar .colored.i80 {width: 80%;}
-.skills .skill-bar .colored.i90 {width: 90%;}
-.skills .skill-bar .colored.i100 {width: 100%;}
+.skills .skill-bar .colored.i30 {width: 30%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i50 {width: 50%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i60 {width: 60%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i70 {width: 70%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i75 {width: 75%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i80 {width: 80%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i90 {width: 90%; transition: all ease-in-out 2s;}
+.skills .skill-bar .colored.i100 {width: 100%; transition: all ease-in-out 2s;}
+
+.contact{
+    padding: 30px 0px 20px;
+    background-color: var(--back-card);
+}
+.contact h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.mapdata{padding-top: 30px;}
+.contact .map{
+    padding: 0px;
+    box-shadow: 0px 0px 10px white;
+}
+.contact .map img{width: 100%}
+.infodata{
+    padding-top: 30px;
+}
+.infodata p{color: white; margin: 0px;}
+.contact-box{
+    position: relative;
+    padding: 0px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 5px white;
+}
+.infodata .svg{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.infodata .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(10px, 2vw, 40px) 0px;
+}
+.infodata p a{text-decoration: none; color: white; font-style: italic;}
+
+
+@media only screen and (min-width: 991px) {
+    .education .container-block, 
+    .resume .container-block{
+        margin: 20px;
+        position: relative;
+    }
+
+    .education .container-block::before, .resume .container-block::before{
+        position: absolute;
+        left: 50%;
+        margin-left: -20px
+    }
+    .education .block, .resume .block{
+        display: flex;
+    }
+    .education .block::before, .resume .block::before{
+        content: "";
+        position: absolute;
+        top: 8px;
+        bottom: 0;
+        width: 2px;
+        left: 50%;
+    }
+    .education .card, .resume .card{
+        width: 48%;
+    }
+    .education .year, .resume .year{
+        position: relative;
+        width: 50%;
+    }
+}

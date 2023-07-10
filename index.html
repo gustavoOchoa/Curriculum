@@ -40,31 +40,34 @@
       </div>
       <section id="menu" class="container">
         <ul class="row">
-          <li class="col-3"><a class="nav-link" href="">Who am I?</a></li>
-          <li class="col-3"><a class="nav-link" href="">Resume</a></li>
-          <li class="col-3"><a class="nav-link" href="">Skills</a></li>
-          <li class="col-3"><a class="nav-link" href="">Contact</a></li>
+          <li class="col"><a class="nav-link" href="#selfie">Who am I?</a></li>
+          <li class="col"><a class="nav-link" href="#education">Education</a></li>
+          <li class="col"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="col"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="col"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </section>
       <section class="bio">
         <div class="container">
-          <div class="card profile mb-3 noShow">
-            <div class="row g-0">
-              <div class="col-4 profile-pic">
-                <img src="./assets/img/photo.jpg" alt="Gutavo Ochoa" class="img-fluid rounded-start">
-              </div>
-              <div class="col-8">
-                <div class="card-body">
-                  <h5 class="card-title">Bio</h5>
-                  <div class="profile-info">
-                    <p><span>Birth:</span>Córdoba, Córdoba, Argentina</p>
-                    <p><span>Location:</span>Posadas, Misiones, Argentina</p>
+          <div class="row justify-content-center">
+            <div class="card col-12 col-sm-11 col-md-10 col-lg-9 profile mb-3 noShow">
+              <div class="row g-0">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-3 profile-pic">
+                  <img src="./assets/img/photo.jpg" alt="Gutavo Ochoa" class="img-fluid rounded-start">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-9 d-flex">
+                  <div class="card-body align-content-center">
+                    <h2 class="card-title">Bio</h2>
+                    <div class="profile-info">
+                      <p><strong>Birth: </strong>Córdoba, Córdoba, Argentina</p>
+                      <p><strong>Location: </strong>Posadas, Misiones, Argentina</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row selfie noShow">
+          <div class="row selfie noShow" id="selfie">
             <div class="col">
               <h3>Who am I?</h3>
               <p>I am a passionate professional with a keen interest in new technologies. I embarked on my career back in 2008 as a Junior Developer, primarily focusing on web page development. It was during this time that I discovered my love for stylesheets and started working with PHP, JavaScript, and jQuery. Since then, I have continued to expand my knowledge in various technologies and have had the privilege of collaborating with diverse development teams, which has been immensely fulfilling.</p>
@@ -73,7 +76,7 @@
           </div>
         </div>
       </section>
-      <section class="education">
+      <section class="education" id="education">
         <div class="container">
           <div class="row">
             <h1>Education</h1>  
@@ -99,15 +102,16 @@
           <div class="row">
             <div class="container-block">
               <div class="block">
+                
+                <div class="year">
+                  <p class="text-end px-5">1994 - 2000</p>
+                </div>
                 <div class="card edu-card noShow">
                   <div class="card-body">
                     <h5 class="card-title">Catholic University of Cordoba</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Córdoba, Córdoba, Argentina</h6>
                     <p class="card-text">Public accountant</p>
                   </div>
-                </div>
-                <div class="year">
-                  <p>1994 - 2000</p>
                 </div>
               </div>
             </div>
@@ -132,7 +136,7 @@
 
         </div>
       </section>
-      <section class="resume">
+      <section class="resume" id="resume">
 
         <div class="container">
           <div class="row">
@@ -159,6 +163,9 @@
           <div class="row">
             <div class="container-block">
               <div class="block">
+                <div class="year">
+                  <p class="text-end px-5">2008 - 2013</p>
+                </div>
                 <div class="card edu-card noShow">
                   <div class="card-body">
                     <h5 class="card-title">Track Studio SRL</h5>
@@ -166,9 +173,6 @@
                     <p class="card-text">Web development systems in PHP, CSS, HTML, JS with MYSQL database.</p>
                     <p class="card-text">Trainer for new Developers starting at the company.</p>
                   </div>
-                </div>
-                <div class="year">
-                  <p>2008 - 2013</p>
                 </div>
               </div>
             </div>
@@ -195,201 +199,338 @@
         </div>
 
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
 
           <div class="row">
             <h1>Skills</h1>
           </div>
 
-          <div class="row skill-item">
-            <div class="col-6 skill-name">
-              <p>Oracle PL/SQL</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">
+                  <p>Oracle PL/SQL</p>
+                </div>
+                <div class="col-6 skill-bar" aria-describedby="70">
+                  <div class="colored"></div>
+                  <div class="bar">70%</div>
+                </div>
+              </div>
             </div>
-            <div class="col-6 skill-bar" aria-describedby="70">
-              <div class="colored"></div>
-              <div class="bar">70%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Mysql</div>
-            <div class="col-6 skill-bar" aria-describedby="60">
-              <div class="colored"></div>
-              <div class="bar">60%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Apache</div>
-            <div class="col-6 skill-bar" aria-describedby="75">
-              <div class="colored"></div>
-              <div class="bar">75%</div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Mysql</div>
+                <div class="col-6 skill-bar" aria-describedby="60">
+                  <div class="colored"></div>
+                  <div class="bar">60%</div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">PHP</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Apache</div>
+                <div class="col-6 skill-bar" aria-describedby="75">
+                  <div class="colored"></div>
+                  <div class="bar">75%</div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Node JS</div>
-            <div class="col-6 skill-bar" aria-describedby="60">
-              <div class="colored"></div>
-              <div class="bar i60">60%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Codeigniter 4</div>
-            <div class="col-6 skill-bar" aria-describedby="90">
-              <div class="colored"></div>
-              <div class="bar">90%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">RESTful</div>
-            <div class="col-6 skill-bar" aria-describedby="70">
-              <div class="colored"></div>
-              <div class="bar">70%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Slim Frmwk</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">HTML 5</div>
-            <div class="col-6 skill-bar" aria-describedby="70">
-              <div class="colored"></div>
-              <div class="bar">70%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">CSS</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Bootstrap</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Tailwind CSS</div>
-            <div class="col-6 skill-bar" aria-describedby="30">
-              <div class="colored"></div>
-              <div class="bar">30%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Javascript</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Jquery</div>
-            <div class="col-6 skill-bar" aria-describedby="90">
-              <div class="colored"></div>
-              <div class="bar">90%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Angular 2</div>
-            <div class="col-6 skill-bar" aria-describedby="30">
-              <div class="colored"></div>
-              <div class="bar">30%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">ReactJS</div>
-            <div class="col-6 skill-bar" aria-describedby="60">
-              <div class="colored"></div>
-              <div class="bar">60%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">NextJS</div>
-            <div class="col-6 skill-bar" aria-describedby="60">
-              <div class="colored"></div>
-              <div class="bar">60%</div>
-            </div>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">TurboRepo</div>
-            <div class="col-6 skill-bar" aria-describedby="50">
-              <div class="colored"></div>
-              <div class="bar">50%</div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">PHP</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="row">
-            <h1>Langages</h1>
-          </div>
-
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Spanish</div>
-            <div class="col-6 skill-bar" aria-describedby="100">
-              <div class="colored"></div>
-              <div class="bar">100%</div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Node JS</div>
+                <div class="col-6 skill-bar" aria-describedby="60">
+                  <div class="colored"></div>
+                  <div class="bar i60">60%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Codeigniter 4</div>
+                <div class="col-6 skill-bar" aria-describedby="90">
+                  <div class="colored"></div>
+                  <div class="bar">90%</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="row skill-item">
-            <div class="col-6 skill-name">English</div>
-            <div class="col-6 skill-bar" aria-describedby="80">
-              <div class="colored"></div>
-              <div class="bar">80%</div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">RESTful</div>
+                <div class="col-6 skill-bar" aria-describedby="70">
+                  <div class="colored"></div>
+                  <div class="bar">70%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Slim Frmwk</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="row skill-item">
-            <div class="col-6 skill-name">Portuguese</div>
-            <div class="col-6 skill-bar" aria-describedby="70">
-              <div class="colored"></div>
-              <div class="bar">70%</div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">HTML 5</div>
+                <div class="col-6 skill-bar" aria-describedby="70">
+                  <div class="colored"></div>
+                  <div class="bar">70%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">CSS</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Bootstrap</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Tailwind CSS</div>
+                <div class="col-6 skill-bar" aria-describedby="30">
+                  <div class="colored"></div>
+                  <div class="bar">30%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Javascript</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Jquery</div>
+                <div class="col-6 skill-bar" aria-describedby="90">
+                  <div class="colored"></div>
+                  <div class="bar">90%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Angular 2</div>
+                <div class="col-6 skill-bar" aria-describedby="30">
+                  <div class="colored"></div>
+                  <div class="bar">30%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">ReactJS</div>
+                <div class="col-6 skill-bar" aria-describedby="60">
+                  <div class="colored"></div>
+                  <div class="bar">60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">NextJS</div>
+                <div class="col-6 skill-bar" aria-describedby="60">
+                  <div class="colored"></div>
+                  <div class="bar">60%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">TurboRepo</div>
+                <div class="col-6 skill-bar" aria-describedby="50">
+                  <div class="colored"></div>
+                  <div class="bar">50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <h1>Languages</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Spanish</div>
+                <div class="col-6 skill-bar" aria-describedby="100">
+                  <div class="colored"></div>
+                  <div class="bar">100%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">English</div>
+                <div class="col-6 skill-bar" aria-describedby="80">
+                  <div class="colored"></div>
+                  <div class="bar">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row skill-item">
+                <div class="col-6 skill-name">Portuguese</div>
+                <div class="col-6 skill-bar" aria-describedby="70">
+                  <div class="colored"></div>
+                  <div class="bar">70%</div>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="row">
             <h3>Contact</h3>
           </div>
           <div class="row">
-            <div class="col-8">
-              <div class="map"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5 mapdata">
+              <div class="map">
+                <img src="./assets/img/map.png" alt="Posadas, Misiones, Argentina">
+              </div>
             </div>
-            <div class="col-4">
-              <div class="cellphone"></div>
-              <div class="email"></div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 infodata">
+              <div class="cellphone contact-box">
+                <div class="row">
+                  <div class="svg col-2 col-sm-3 col-md-2 col-lg-2">
+                    <svg 
+                        fill="#ffffff" 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 27.442 27.442"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier"> 
+                          <g> 
+                            <path d="M19.494,0H7.948C6.843,0,5.951,0.896,5.951,1.999v23.446c0,1.102,0.892,1.997,1.997,1.997h11.546 c1.103,0,1.997-0.895,1.997-1.997V1.999C21.491,0.896,20.597,0,19.494,0z M10.872,1.214h5.7c0.144,0,0.261,0.215,0.261,0.481 s-0.117,0.482-0.261,0.482h-5.7c-0.145,0-0.26-0.216-0.26-0.482C10.612,1.429,10.727,1.214,10.872,1.214z M13.722,25.469 c-0.703,0-1.275-0.572-1.275-1.276s0.572-1.274,1.275-1.274c0.701,0,1.273,0.57,1.273,1.274S14.423,25.469,13.722,25.469z M19.995,21.1H7.448V3.373h12.547V21.1z"></path> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                            <g> </g> 
+                          </g> 
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="box col-10 col-sm-9 col-sm-10 col-lg-10">
+                    <div class="box-title">
+                      <p><strong>Cellphone</strong></p>
+                    </div>
+                    <div class="box-content">
+                      <p>+54 9 3764 - 663076</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="email contact-box">
+                <div class="row">
+                  <div class="svg col-2 col-sm-3 col-md-2 col-lg-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      viewBox="0 0 217.80688 229.38928"
+                    >
+                    <path
+                        d="m 95.547716,1.6867083 c 10.410004,-2.09000004 21.160004,-2.05000004 31.670004,-0.90000004 15.47,2.21000004 30.85,6.61000004 44.29,14.77999974 16.79,9.74 30.76,24.59 38.65,42.39 7.82,17.39 9.46,37.24 5.76,55.860002 -4.8,23.91 -19.2,45.88 -39.63,59.31 -8.99,5.85 -19.36,10.25 -30.22,10.35 -6.62,0.15 -13.52,-3.06 -16.75,-9.02 -2.08,-3.53 -2.63,-7.65 -3.06,-11.65 -9.02,10.81 -21.48,19.85 -35.860004,21.21 -12.08,0.89 -24.59,-3.59 -32.97,-12.42 -9.3,-9.34 -13.6,-22.72 -13.7,-35.7 0.02,-14.73 3.32,-29.42 9.55,-42.760002 8.55,-18.35 23.35,-34.7 42.89,-41.3 11.170004,-3.66 23.900004,-5.05 34.920004,-0.12 9.19,4.06 15.6,12.67 19.01,21.9 2.16,-6.44 4.66,-12.76 6.9,-19.17 6.49,0.07 12.99,0.06 19.48,0 -8.44,28.9 -17.04,57.760002 -25.58,86.640002 -1.71,6.11 -4.14,12.34 -3.27,18.81 0.38,2.9 2.28,6 5.42,6.39 6.32,0.87 12.02,-2.85 16.61,-6.75 11.02,-9.96 18.18,-23.5 22.8,-37.46 6.34,-18.83 5.89,-40.120002 -2.45,-58.270002 -6.44,-14.49 -17.75,-26.62 -31.44,-34.53 -17.49,-10.27 -38.6,-14.19 -58.610004,-10.94 -19.07,2.88 -36.82,12.47 -50.35,26.11 -25.9,26.08 -35.32,66.900002 -23.77,101.760002 5.82,18.03 17.11,34.24 31.99,45.97 18.48,14.75 42.720004,22.16 66.290004,19.79 25.86,-2.79 51.05,-15.7 66.96,-36.51 6.57,-0.25 13.16,-0.05 19.74,-0.14 -8.62,15.2 -21.39,27.94 -36.19,37.15 -20.93,13.04 -46.19,18.77 -70.7,16.4 -22.950004,-1.92 -45.250004,-11 -62.920004,-25.78 -21.74,-17.94 -36.1099995,-44.41 -39.8499995,-72.31 -3.81,-26.91 1.79,-55.220002 16.7099995,-78.060002 17.12,-26.96 46.08,-46.1299997 77.68,-51.0299997 m -11.52,85.2499997 c -10.07,12.77 -16.31,28.650002 -17.15,44.920002 -0.38,9.1 2.67,18.53 9.38,24.87 5.73,5.03 13.75,7.46 21.28,5.99 9.430004,-1.63 17.330004,-7.87 23.430004,-14.95 10.48,-12.66 17.28,-28.42 19.28,-44.73 1.09,-7.900002 -0.82,-16.240002 -5.68,-22.610002 -4.91,-7.17 -13.73,-12.2 -22.57,-10.64 -11.3,1.38 -20.950004,8.52 -27.970004,17.15 z"
+                        style="fill:#FFFFFF" />
+                    </svg>
+                  </div>
+                  <div class="box col-10 col-sm-9 col-sm-10 col-lg-10">
+                    <div class="box-title">
+                      <p><strong>Email</strong></p>
+                    </div>
+                    <div class="box-content">
+                      <p><a href="mailto:gustavoeochoa@gmail.com?subject=Email%20desde%20Github">gustavoeochoa@gmail.com</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="whatzap contact-box">
+                <div class="row">
+                  <div class="svg col-2 col-sm-3 col-md-2 col-lg-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  </div>
+                  <div class="box col-10 col-sm-9 col-sm-10 col-lg-10">
+                    <div class="box-title">
+                      <p><strong>WhatsApp</strong></p>
+                    </div>
+                    <div class="box-content">
+                      <p><a href="https://wa.me/5493764663076">Send me a message</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

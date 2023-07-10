@@ -51,15 +51,15 @@ const barFill = new IntersectionObserver(bars => {
 
         if (bar.isIntersecting){
             children.forEach(item => {
-                if(item.target.classList.contains('colored')){
-                    item.target.classList.add('i'+width);
+                if(item.classList.contains('colored')){
+                    item.classList.add('i'+width);
                 }
             });
         }
         else{
             children.forEach(item => {
-                if(item.target.classList.contains('colored')){
-                    item.target.classList.remove('i'+width);
+                if(item.classList.contains('colored')){
+                    item.classList.remove('i'+width);
                 }
             });
         }
